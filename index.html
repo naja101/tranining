@@ -24,16 +24,42 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Slick Slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- Fancybox สำหรับคลิกขยายภาพ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
+
+  
   * Template Name: Arsha
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
   * Updated: Feb 22 2025 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+
 </head>
 
 <body class="index-page">
@@ -64,7 +90,7 @@
 
           
           <li><a href="#services">ราคา</a></li>
-          <li><a href="#team">ผู้สอน</a></li>
+          <li><a href="about.html">ผู้สอน</a></li>
           <li><a href="#pricing">ติดต่อเรา</a></li>
 
         </ul>
@@ -488,12 +514,15 @@
                  <i class="fab fa-youtube" style="color: #4facfe; margin-right: 10px;"></i>
                  <span> เจ้าของช่อง YouTube "เก่งออฟฟิศ ง่ายนิดเดียว</span>
                 <p>"ทุกการเรียนรู้ต้องมีเป้าหมายและทุกการสอนต้องพาไปถึงเป้าหมายได้จริง"</p>
+               
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""> <i class="bi bi-linkedin"></i> </a>
                 </div>
+               
+               <a class="btn-getstarted" href="about.html">Read More</a>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -714,12 +743,13 @@ Lookup เจอหลายค่า จัดการได้ รวมห�
 
 
 </div>
-  <div class="container section-title" data-aos="fade-up">
+
+  <!-- <div class="container section-title" data-aos="fade-up"> 
         <h2></h2>
         <p>ติดตามชมวิดีโอเพิ่มเติมได้ที่ YouTube <a href="https://www.youtube.com/@OfficeWithU"> <i class="bi bi-play-circle"></i> "เก่งออฟฟิศ ง่ายนิดเดียว"</p>
 
           
-      </div>
+      </div> -->
 
               
             </div><!-- End Steps Item -->
@@ -735,7 +765,108 @@ Lookup เจอหลายค่า จัดการได้ รวมห�
     </section><!-- /Work Process Section -->
 
 
+    <!-- gallery/ Section -->
 
+  <section id="gallery" class="clients section light-background">
+
+     <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>ภาพบรรยากาศการเรียนการสอนของเรา</p>
+      </div>
+
+      <div class="container" data-aos="zoom-in">    
+<style>
+  /* ปรับขนาดความกว้าง/ความสูงของภาพใน Carousel */
+  .carousel-item img {
+   max-width: 500px;        /* 👉 กำหนดความกว้าง เช่น 500px / 600px / 80% */
+    max-height: 350px;   /* 👉 กำหนดความสูงสูงสุด */
+    object-fit: cover;   /* 👉 ทำให้ภาพไม่บุบเบี้ยว */
+    margin: 0 auto;      /* 👉 จัดภาพให้อยู่กึ่งกลาง */
+    cursor: zoom-in;
+    border-radius: 10px; /* (เลือกได้) ทำมุมโค้ง */
+  }
+</style>
+
+<!-- Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="assets/img/blog/blog-post-1.webp" class="d-block w-100 expand-image" alt="slide1">
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content.</p>
+      </div> -->
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/img/blog/blog-post-2.webp" class="d-block w-100 expand-image" alt="slide2">
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content.</p>
+      </div> -->
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/img/blog/blog-post-3.webp" class="d-block w-100 expand-image" alt="slide3">
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content.</p>
+      </div> -->
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/clients/clients-1.webp" class="d-block w-100 expand-image" alt="slide2">
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content.</p>
+      </div> -->
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/img/clients/clients-2.webp" class="d-block w-100 expand-image" alt="slide3">
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content.</p>
+      </div> -->
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+  </section>
+<!-- Modal ขยายภาพ -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img id="modalImage" class="img-fluid rounded">
+    </div>
+  </div>
+</div>
+
+<script>
+  // คลิกภาพแล้วขยาย
+  document.querySelectorAll('.expand-image').forEach(img => {
+    img.addEventListener('click', function () {
+      document.getElementById('modalImage').src = this.src;
+      new bootstrap.Modal(document.getElementById('imageModal')).show();
+    });
+  });
+</script>
+
+    <!--ปิดgallery/ Section -->
 
     <!-- Subscribe Section -->
     <section id="subscribe" class="subscribe section">
@@ -952,6 +1083,11 @@ Lookup เจอหลายค่า จัดการได้ รวมห�
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+
+
+
 
 </body>
 
